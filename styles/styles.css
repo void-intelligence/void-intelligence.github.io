@@ -3,13 +3,26 @@ body
     margin: 0;
     padding: 0;
     background: #0c151e;
+    font-family: consolas;
 }
 
-div
+span
 {
     margin: 0;
     padding: 0;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #0c151e;
+
+}
+
+div 
+{
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -19,21 +32,81 @@ div
 
 a
 {
+
     position: relative;
     display: inline-block;
     padding: 15px 30px;
-    color: #1ced92;
     text-transform: uppercase;
     letter-spacing: 4px;
     text-decoration: none;
-    font-size: 44px;
+    font-size: 35px;
     overflow: hidden;
     transition: 0.2s;
 }
 
-a:hover
+a:hover 
+{
+    
+    font-size: 44px;
+}
+
+/* Nomad Button */
+#nomad a
+{
+    color: #1ced92;
+}
+
+#nomad a:hover
 {
     color: #0c151e;
     background: #1ced92;
     box-shadow: 0 0 10px #1ced92, 0 0 40px #1ced92, 0 0 80px #1ced92;
+}
+
+/* Vortex Button */
+#vortex a
+{
+    color: #658ec9;
+}
+
+#vortex a:hover
+{
+    color: #0c151e;
+    background: #658ec9;
+    box-shadow: 0 0 10px #658ec9, 0 0 40px #658ec9, 0 0 80px #658ec9;
+}
+
+/* Profound Button */
+#profound a
+{
+    color: #9B82FF;
+}
+
+#profound a:hover
+{
+    color: #0c151e;
+    background: #9B82FF;
+    box-shadow: 0 0 10px #9B82FF, 0 0 40px #9B82FF, 0 0 80px #9B82FF;
+}
+
+
+
+#VI 
+{
+    position: absolute;
+    display: inline;
+    padding: 15px 30px;
+    margin-top: 10px;
+    margin-left: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 15px;
+    overflow: hidden;
+    color: #658ec9;
+}
+
+
+#VI:hover
+{
+    font-size: 22px;
 }
